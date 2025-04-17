@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enhancements - Business Website</title>
+    <link rel="icon" type="image/x-icon" href="images/icon1.png">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/layout.css">
+</head>
+<body>
+    <header>
+        <a href="index.html" class="logo">WorkWagon</a>
+     
+        <nav>
+            <ul class="nav__links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="jobs.html">Jobs</a></li>
+                
+                <li><a href="enhancements.html">Enhancements</a></li>
+            </ul>
+        </nav>
+        <a class="cta" href="apply.html">Apply</a>
+    </header>
+    <div class ="enchancement#1">
+      <h1>Enhancements</h1>
+      <p>List of website improvements goes here.</p><br>
+
+      <h2>Enhancement #1: CSS3 Animations (Hero Fade-In & Pulsing CTA)</h2>
+      <p>
+        I implemented <strong>CSS3 keyframes</strong> to make the hero image fade in and 
+        to give the “Apply” CTA button a pulsing effect. This goes beyond a simple 
+        color change on hover and demonstrates more advanced use of 
+        <code>@keyframes</code> and <code>animation</code> properties.
+      </p>
+      <p>
+        <strong>Code Example:</strong> 
+        <pre>
+        @keyframes heroFadeIn {
+          0%   { opacity: 0; transform: translateY(-20px); }
+          100% { opacity: 1; transform: translateY(0); }
+        }
+        </pre>
+      </p>
+      <p>Reference:
+        <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/@keyframes" target="_blank">
+          MDN: CSS @keyframes
+        </a>
+      </p>
+      <p>
+        <a href="index.html#hero-section">View the Hero Animation in Action</a>
+      </p>
+    </div>
+
+    <div class = "enchancement#2">
+      <h3>Rainbow effect in home page</h3>
+      <p>To acheive this effect, we used background: linear-gradient(90deg, #ffeb3b, #00e676, #40c4ff, #7c4dff); and   -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent; to apply the background only to text as linear gradient doesnt work on color. Further usafe of animation element, allow us to create a smooth transition for the colors.</p>
+        <p>Refrence</p>
+        <p><a href="https://www.youtube.com/watch?v=Hvrl93x-P3s">Ideas on how to create rainbow animated text</a></p>
+    </div>
+
+    
+    <div class = "enchancement#3">
+      <h3>Hover effect on success story </h3>
+      <p>I used:
+        -ms-transform: scale(1.5); /* IE 9 */
+        -webkit-transform: scale(1.5); /* Safari 3-8 */
+        transform: scale(1.5);
+        <br>
+        To transform the scale of the image upon hovering.
+      </p>
+      <p>Refrences</p>
+      <p><a href = "https://www.w3schools.com/howto/howto_css_zoom_hover.asp">View here on W3School</a></p>
+    </div>
+
+    <div class = "enchancement#4">
+      <h3>Number and Word detection in form</h3>
+      <p>
+        .formtext input[type="text"]:invalid,.formtext input[type="email"]:invalid {
+          border: 1px solid #D55C5F;
+        }
+        
+        .formtext input[type="text"]:valid,.formtext input[type="email"]:valid {
+          border: 1px solid lightgreen;
+        }
+        Through usage of input[type="text"] pseudo code, the condition that is set for the type would change color if the user enter incorrect information.
+      </p>
+    </div>
+    
+    
+</body>
+</html>
